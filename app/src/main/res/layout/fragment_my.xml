@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragment.MyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_my_background">
+
+        <TextView
+            android:id="@+id/my_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@mipmap/ic_my_photo"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="手机号"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <com.day.money.view.ProfileEdit
+        android:id="@+id/my_progess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:isarrows="true"
+        app:lifeIamge="@mipmap/ic_my_progess"
+        app:type="贷款进度"
+        app:value=" ">
+
+    </com.day.money.view.ProfileEdit>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/divider_background" />
+
+    <com.day.money.view.ProfileEdit
+        android:id="@+id/my_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isarrows="true"
+        app:lifeIamge="@mipmap/ic_my_rate"
+        app:type="我的免息卷"
+        app:value=" ">
+
+    </com.day.money.view.ProfileEdit>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/divider_background" />
+
+    <com.day.money.view.ProfileEdit
+        android:id="@+id/my_safe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isarrows="true"
+        app:lifeIamge="@mipmap/ic_my_safe"
+        app:type="安全小贴士"
+        app:value=" ">
+
+    </com.day.money.view.ProfileEdit>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/divider_background" />
+
+    <com.day.money.view.ProfileEdit
+        android:id="@+id/my_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isarrows="true"
+        app:lifeIamge="@mipmap/ic_my_feedback"
+        app:type="意见反馈"
+        app:value=" ">
+
+    </com.day.money.view.ProfileEdit>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/divider_background" />
+
+    <com.day.money.view.ProfileEdit
+        android:id="@+id/my_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isarrows="true"
+        app:lifeIamge="@mipmap/ic_my_setting"
+        app:type="设置"
+        app:value=" ">
+
+    </com.day.money.view.ProfileEdit>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divider_background" />
+
+
+</LinearLayout>
